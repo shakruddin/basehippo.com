@@ -1,0 +1,296 @@
+<div class="uk-padding-large uk-padding-remove-bottom" uk-grid>
+        <div class="uk-width-1-4@m">
+            <h2 class="uk-heading-bullet text-color-grey">Profile & Settings</h2>
+        </div>
+        <div class="uk-width-expand@m uk-flex uk-flex-right">
+            <a class="uk-button uk-button-primary uk-button-small uk-flex uk-flex-middle" href="#change-password" uk-toggle>Change Password</a>
+        </div>
+    </div>
+    
+
+
+    <!-- ADD NEW BOOKING MODAL BOX -->
+
+
+
+<div id="change-password" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default color-white" type="button" uk-close></button>
+        <div class="uk-modal-header uk-background-primary">
+            <h3 class="color-white">Add New Booking</h3>
+        </div>
+        <div class="uk-modal-body">
+            <form class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-1@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey">Current Password</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey">New Password</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey">Confirm New Password</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Success message...', status: 'success'})">Save</button>
+        </div>
+    </div>
+</div>
+
+
+
+    <hr class="uk-divider-icon">
+    
+    
+    <div class="uk-padding-large uk-padding-remove-top" uk-grid>
+        <div class="uk-width-1-4@m">
+            
+                <div class="uk-card uk-background-muted only-border uk-margin-large-bottom">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="Basehippo__Images/user-icon.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h4 class="uk-margin-remove-bottom uk-text-primary">Title</h4>
+                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            <!-- My Booking fields -->
+
+            <a class="uk-link-reset" href="/my-booking">
+            <div class="uk-card uk-background-muted only-border uk-margin-small-bottom">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <span uk-icon="icon: album; ratio: 1.5"></span>
+                        </div>
+                        <div class="uk-width-expand uk-flex uk-flex-between">
+                            <h5 class="uk-margin-remove-bottom">My Booking</h5>
+                            <span class="uk-badge">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <!-- Profile & Settings field -->
+
+            <a class="uk-link-reset" href="/profile-settings">
+            <div class="uk-card uk-background-muted  only-active-border uk-margin-small-bottom">
+                <div class="uk-card-header uk-text-primary">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <span uk-icon="icon: user; ratio: 1.5"></span>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove-bottom uk-text-bold uk-text-primary">Profile & Settings</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+        
+            <!-- Help & Support field -->
+
+            <a class="uk-link-reset" href="#">
+            <div class="uk-card uk-background-muted only-border uk-margin-small-bottom">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <span uk-icon="icon: question; ratio: 1.5"></span>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove-bottom">Help & Support</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="uk-width-expand@m">
+            <div class="form-box">
+            <div class="padding-medium uk-background-primary">
+                <h3 class="color-white uk-margin-remove uk-text-center">PERSONAL INFORMATION</h3>
+            </div>
+            <hr class="uk-margin-remove">
+            <div class="padding-medium only-border">
+                <form class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">First Name</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="First Name" value="Shakruddin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Last Name</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="Last Name" value="Pathan">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Business</p>
+                            <div class="uk-form-controls">
+                                <select class="uk-select">
+                                    <option selected disabled>Select</option>
+                                    <option>DJ</option>
+                                    <option>Tant</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Shop Name</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="Shop Name" value="Shop Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Address</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="Address" value="Address">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Pin-Code</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="Pin-Code" value="Pin-Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">City</p>
+                            <div class="uk-form-controls">
+                                <select class="uk-select">
+                                    <option>Option 01</option>
+                                    <option>Option 02</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Email Address</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="Email Address" value="basehippo@gamil.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Phone</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="25">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Alternative Phone</p>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" placeholder="25">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@s">
+                            <div>
+                                <p class="uk-form-label label-size text-color-grey">Birthday</p>
+                                <div class="uk-form-controls uk-flex uk-flex-between">
+                                    <div class="uk-width-1-4@s">
+                                        <input class="uk-input" type="text" placeholder="DD">
+                                    </div>
+                                    <div class="uk-width-1-4@s">
+                                        <input class="uk-input" type="text" placeholder="MM">
+                                    </div>
+                                    <div class="uk-width-1-4@s">
+                                        <input class="uk-input" type="text" placeholder="YY">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+    
+
+
+                    
+                    <div class="uk-width-1-2@s">
+                        <div>
+                            <p class="uk-form-label label-size text-color-grey">Gender</p>
+                            <div class="uk-form-controls">
+                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-radio" type="radio" name="radio1" checked> Male</label>
+                                    <label><input class="uk-radio" type="radio" name="radio1"> Female</label>
+                                    <label><input class="uk-radio" type="radio" name="radio1"> Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-flex uk-flex-center uk-width-1-1">
+                        <button class="uk-button uk-button-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

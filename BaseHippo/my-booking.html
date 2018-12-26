@@ -1,0 +1,160 @@
+<div class="uk-padding-large uk-padding-remove-bottom" uk-grid>
+    <div class="uk-width-1-4@m">
+        <h2 class="uk-heading-bullet text-color-grey">My Booking</h2>
+    </div>
+    <div class="uk-width-expand@m uk-flex uk-flex-around">
+        <a class="uk-button uk-button-primary uk-button-small border-radius-full uk-flex uk-flex-middle" href="#modal-sections" uk-toggle>ADD NEW BOOKING</a>
+    </div>
+</div>
+
+<!-- ADD NEW BOOKING MODAL BOX -->
+
+
+
+<div id="modal-sections" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default color-white" type="button" uk-close></button>
+        <div class="uk-modal-header uk-background-primary">
+            <h3 class="color-white">Add New Booking</h3>
+        </div>
+        <div class="uk-modal-body">
+            <form class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-2@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Booking Name</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" value="Booking Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Booking Date</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" value="Booking Date">
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="uk-width-1-2@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Booking Price</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" value="Booking Price">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Booking Address</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" value="Booking Address">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Booking Price</p>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" value="Booking Price">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s">
+                    <div>
+                        <p class="uk-form-label label-size text-color-grey" for="form-stacked-text">Notes :-</p>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Success message...', status: 'success'})">Save</button>
+        </div>
+    </div>
+</div>
+
+
+
+<hr class="uk-divider-icon">
+
+
+<div class="uk-padding-large uk-padding-remove-top" uk-grid>
+    <div class="uk-width-1-4@m">
+        <div class="uk-card uk-background-muted only-border uk-margin-large-bottom">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-border-circle" width="40" height="40" src="Basehippo__Images/user-icon.png">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-margin-remove-bottom uk-text-primary">Title</h4>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <a class="uk-link-reset" href="/my-booking">
+        <div class="uk-card uk-background-muted only-active-border uk-margin-small-bottom">
+            <div class="uk-card-header uk-text-primary">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span uk-icon="icon: album; ratio: 1.5"></span>
+                    </div>
+                    <div class="uk-width-expand uk-flex uk-flex-between">
+                        <h5 class="uk-margin-remove-bottom uk-text-bold uk-text-primary">My Booking</h5>
+                        <span class="uk-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="uk-link-reset" href="/profile-settings">
+        <div class="uk-card uk-background-muted only-border uk-margin-small-bottom">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span uk-icon="icon: user; ratio: 1.5"></span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove-bottom">Profile & Settings</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="uk-link-reset" href="#">
+        <div class="uk-card uk-background-muted only-border uk-margin-small-bottom">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span uk-icon="icon: question; ratio: 1.5"></span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove-bottom">Help & Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </a>
+    <div class="uk-width-expand@m">
+        <blockquote cite="#" class="uk-column-span uk-text-center">
+                <span class="uk-align-center" uk-icon="icon:  chevron-up; ratio: 1.5"></span>
+            <p>“Start by adding all your booking, we will remind you on time”</p>
+        </blockquote>
+    </div>
+</div>

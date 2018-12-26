@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/starability-all.min.css">
+</head>
+<body>
+    <div class="uk-background-primary">
+
+            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+        
+                    <nav class="uk-navbar-container uk-background-primary" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <div class="uk-text-large uk-text-bold">
+                                <div class="brand-logo">
+                                    <img src="Basehippo__Images/basehippo-logo.png" width="100%" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav uk-visible@s">
+                                <li class="uk-active uk-text-bold"><a href="#">PAYMENT OPTION</a></li>
+                                <li class="uk-text-bold">
+                                    <a href="#">CATEGORIES</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active uk-text-bold"><a href="#">Active</a></li>
+                                            <li class="uk-text-bold"><a href="#">Item</a></li>
+                                            <li class="uk-text-bold"><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="uk-text-bold"><a href="#">TOP STORES</a></li>
+                            </ul>
+
+                            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #offcanvas-flip" uk-navbar-toggle-icon href="#"></a>
+                            <a href="/"><span class="bg-color-white" uk-icon="sign-out"> Sign-out </span></a>
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <form class="uk-search uk-search-default">
+                                        <span uk-search-icon></span>
+                                        <input class="uk-search-input" type="search" placeholder="Search...">
+                                    </form>
+                                    <ul class="uk-navbar-nav uk-flex uk-flex-column uk-flex-top">
+                                        <li class="uk-active"><a href="#">PAYMENT OPTION</a></li>
+                                        <li>
+                                            <a href="#">CATEGORIES</a>
+                                            <div class="uk-navbar-dropdown">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>  
+                                        </li>
+                                        <li><a href="#">TOP STORES</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </nav>
+
+            </div>
+        </div>
+
+
+
+
+
+{{{content}}}
+
+
+
+
+
+<footer>
+    <div class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container mobile-center">
+    
+            <div class="uk-grid-match uk-child-width-1-4@m" uk-grid>
+                <div>
+                    <h3>HELP</h3>
+                    <ul class="uk-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>PARTNERSHIPS</h3>
+                    <ul class="uk-list">
+                        <li><a href="#">Stores</a></li>
+                        <li><a href="#">Banks</a></li>
+                        <li><a href="#">List your Store</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>BATUA</h3>
+                    <ul class="uk-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="uk-text-center">BATUA</h3>
+                    <div class="uk-flex uk-flex-around">
+                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                        <a href="" class="uk-icon-button" uk-icon="instagram"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</footer>
+
+
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+</body>
+</html>
