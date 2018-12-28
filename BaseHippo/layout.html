@@ -82,34 +82,122 @@
             <div class="uk-modal-dialog uk-modal-body pb">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
                 <div class="brand-box">
-                <form>
-                    <h3 class="uk-heading-line uk-text-center uk-text-primary uk-margin-small-bottom uk-margin-top uk-text-bold"><span>Login to view your offers!</span></h3>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon" uk-icon="icon: user"></span>
-                            <input class="uk-input" type="text" placeholder="Email">
-                        </div>
-                    </div>
+                        <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                        <hr class="uk-divider-icon">
+                        <ul class="uk-switcher uk-margin">
+                            <li>
+                                <form>
+                                    <h3 class="uk-heading-line uk-text-center uk-text-primary uk-margin-small-bottom uk-margin-top uk-text-bold"><span>Login to view your businesses!</span></h3>
+                                    <div class="uk-margin">
+                                        <div class="uk-inline uk-width-1-1">
+                                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                            <input class="uk-input" type="text" placeholder="Email">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="uk-margin uk-margin-small-bottom">
+                                        <div class="uk-inline uk-width-1-1">
+                                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                            <input class="uk-input" type="text" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <div class="uk-inline uk-width-1-1">
+                                            <button class="uk-button uk-button-primary">SIGN IN</button>
+                                            <span><a class="uk-link-muted uk-margin-small-left" href="#">Forgot Username or Password?</a></span>
+                                        </div>
+                                    </div>
+                                
+                                </form>
+                                <hr class="uk-divider-icon">
+                                <div class="brand-box">
+                                    <a class="uk-link-reset" href="/my-booking"><div class="brand-btn facebook uk-margin-small-bottom"> <i uk-icon="facebook"></i><div class="b-content"></div><div>Facebook</div> </div> </a>
+                                    <a class="uk-link-reset" href="#"><div class="brand-btn google"> <i uk-icon="google"></i> <div class="b-content"></div> <div>Google</div> </div> </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="uk-heading-line uk-text-center uk-text-primary uk-margin-small-bottom uk-margin-top uk-text-bold"><span>Signup to view your booking!</span></h3>
+                                <form class="uk-grid-small" uk-grid>
+                                    <div class="uk-width-1-2@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" type="text" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" type="text" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" type="text" placeholder="User Name">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select">
+                                                <option selected disabled>Select</option>
+                                                <option>DJ</option>
+                                                <option>More Categories Coming Soon...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-1@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" type="text" placeholder="Email Address">
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-1@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="myInput" type="password" placeholder="Password">
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-1@s">
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="myInput1" type="password" placeholder="confirm Password">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-1@s">
+                                        <div class="uk-form-controls">
+                                            <label><input class="uk-checkbox view-password" onclick="myPassword();" type="checkbox"> Show Password</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-1@s">
+                                        <div class="uk-inline uk-width-1-1">
+                                            <input class="uk-input" type="text" placeholder="Mobile/Phone No.">
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-1@s">
+                                        <div>
+                                            <p class="uk-form-label label-size text-color-grey">Gender</p>
+                                            <div class="uk-form-controls">
+                                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                                    <label><input class="uk-radio" type="radio" name="radio1" checked> Male</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio1"> Female</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio1"> Other</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="uk-width-1-2@s">
+                                        <div class="uk-inline uk-width-1-1">
+                                            <button class="uk-button uk-button-primary" id="signup-user">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                
+                                </form>
+                            </li>
+                        </ul>
                 
-                    <div class="uk-margin uk-margin-small-bottom">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                            <input class="uk-input" type="text" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <button class="uk-button uk-button-primary">SIGN IN</button>
-                            <span><a class="uk-link-muted uk-margin-small-left" href="#">Forgot Username or Password?</a></span>
-                        </div>
-                    </div>
-                
-                </form>
-                </div>
-                <hr class="uk-divider-icon">
-                <div class="brand-box">
-                    <a class="uk-link-reset" href="/my-booking"><div class="brand-btn facebook uk-margin-small-bottom"> <i uk-icon="facebook"></i><div class="b-content"></div><div>Facebook</div> </div> </a>
-                    <a class="uk-link-reset" href="#"><div class="brand-btn google"> <i uk-icon="google"></i> <div class="b-content"></div> <div>Google</div> </div> </a>
                 </div>
                 
             </div>
@@ -132,7 +220,7 @@
                 <div>
                     <h3>HELP</h3>
                     <ul class="uk-list">
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div>
@@ -170,5 +258,7 @@
 
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
